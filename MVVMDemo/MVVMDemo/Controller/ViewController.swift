@@ -28,6 +28,11 @@ class ViewController: UIViewController {
     func requestData() {
         let person = Person(name: "godiscoder", image: "head_default", registerTimeStamp: 1480134638.0)
         let viewModel = PersonViewModel(person)
+        
+//        personView.imageView.image = UIImage(named: viewModel.image)
+//        personView.nameLabel.text = viewModel.name
+//        personView.registerTimeLabel.text = viewModel.registerTimeStr
+        
         viewModel.configurate(personView)
     }
 

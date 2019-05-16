@@ -11,15 +11,15 @@ import UIKit
 class PersonViewModel {
     let person: Person
     
-    private var name: String {
+    var name: String {
         return person.name
     }
     
-    private var image: String {
+    var image: String {
         return person.image
     }
     
-    private var registerTimeStr: String {
+    var registerTimeStr: String {
         let date = Date(timeIntervalSince1970: person.registerTimeStamp)
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd HH:mm"
